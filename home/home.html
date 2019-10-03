@@ -15,17 +15,25 @@
         <i class="fas fa-search"></i>
         <input class="form-control search_input ml-sm-2" type="search" placeholder="Search by product name, manufacturer, SKU, keyword..." aria-label="Search">
       </form>
-      <a class="nav-item nav-link categ">
-        <span>Categories</span> <i class="fas fa-chevron-down"></i>
-      </a>
-      <a class="nav-item nav-link fav">
+      <div class="nav-item nav-link dropdown categ">
+        <span class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </span>
+
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Periodontists</a>
+          <a href="#" class="dropdown-item">General Dentistry</a>
+          <a href="#" class="dropdown-item">Endontonics</a>
+        </div>
+      </div>
+      <div class="nav-item nav-link fav">
         <i class="fas fa-heart"></i> <span>Favourites</span>
-      </a>
-      <a class="nav-item nav-link cart">
+      </div>
+      <div class="nav-item nav-link cart">
         <span class="cart_icon_count">0</span>
         <i class="fas fa-shopping-cart"></i>
         <span>Cart</span>
-      </a>
+      </div>
     </ul>
   </div>
 </nav>
