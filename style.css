@@ -1,3 +1,25 @@
 h1, p {
   font-family: Lato;
 }
+
+.search_navbar{
+  background-color: #fff;
+  border-top: 1.5px solid #ABB9C4;
+  border-bottom: 1.5px solid #ABB9C4;
+  padding: 0px 10px;
+}
+.search_ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.search_ul .nav-item{
+  border-left: 1.5px solid #ABB9C4;
+}
+.search_field{
+  flex-grow: 3;
+}
+.search_field .search_input{
+  border: none;
+  width: 90%;
+}
