@@ -28,11 +28,16 @@ h1, p {
   box-shadow: none;
 }
 .cart_icon_count{
-    background-color: #FF5252;
-    color: #fff;
-    border-radius: 50%;
-    font-size: 10px;
-    width: 15px;
-    display: block;
-    text-align: center;
+  background-color: #FF5252;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 10px;
+  width: 15px;
+  display: block;
+  text-align: center;
+}
+
+
+.filter_res_control a{
+  border-left: 1.5px solid #4D586B;
 }
