@@ -47,15 +47,27 @@
 
   <div class="row">
     <!-- repeat col for each item -->
-    <div class="col col-sm-12 col-md-3">
-      
+    <div 
+      class="col col-sm-12 col-md-3 mb-3"
+      ng-repeat="product in $ctrl.products">
+        <div class="product_box d-flex flex-column align-items-center border rounded p-2">
+          <img ng-src="{{product.main_image}}" alt="product image" class="product_image" height="100" width="100">
+
+          <div class="product_info d-flex flex-column">
+            <span class="product_description_text">
+              {{product.description}}
+            </span>
+            <div class="product_price align-self-end mt-3 mb-3">
+              <span>Your Price</span>
+              <span class="price_text font-weight-bold">${{product.vendor_inventory[0].price}}</span>
+            </div>
+
+            <div class="user_cta d-flex justify-content-end">
+              <button class="btn mr-2"><i class="far fa-heart"></i></button>
+              <buttton class="btn btn-primary">Add To Cart</buttton>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
 </div>
-
-<!--
-<h1>Hello {{$ctrl.name}}!</h1>
-<p>
-  Start editing <b>home/home.html</b> :)
-</p>
--->
