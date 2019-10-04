@@ -41,3 +41,31 @@ h1, p {
 .filter_res_control a{
   border-left: 1.5px solid #4D586B;
 }
+
+.product_box .b-1{
+  border-color: #abb9c4;
+}
+.product_description_text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1;
+  max-height: 32.8px;
+}
+
+/*
+@media screen and (max-width: 526px){
+  .search_ul{
+    display: flex;
+    flex-direction: column !important;
+    
+  }
+
+  .search_ul .nav-item{
+    border-left: none !important;
+    border-top: 1.5px solid #ABB9C4;
+  }
+}
+*/

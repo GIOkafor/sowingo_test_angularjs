@@ -51,7 +51,9 @@
       class="col col-sm-12 col-md-3 mb-3"
       ng-repeat="product in $ctrl.products">
         <div class="product_box d-flex flex-column align-items-center border rounded p-2">
-          <img ng-src="{{product.main_image}}" alt="product image" class="product_image" height="100" width="100">
+          <img ng-src="{{product.main_image ? product.main_image : 'https://firebasestorage.googleapis.com/v0/b/form-check-app.appspot.com/o/image%20not%20found.png?alt=media&token=15008152-1af1-406a-8171-752f0a81b0ec'}}" alt="product image" class="product_image" height="60%" width="60%">
+        
+          <hr class="b-1">
 
           <div class="product_info d-flex flex-column">
             <span class="product_description_text">
